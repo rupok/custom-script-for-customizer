@@ -8,11 +8,11 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Add custom script through WordPress Customizer. 
+Add custom script to header and footer through WordPress Customizer. 
 
 == Description ==
 
-Add custom script through WordPress Customizer. You can place any custom JavaScript, Google Analytics to header or footer. 
+Add custom script to header and footer through WordPress Customizer. You can place any custom JavaScript, Google Analytics or embed script.
 
 == Installation ==
 
