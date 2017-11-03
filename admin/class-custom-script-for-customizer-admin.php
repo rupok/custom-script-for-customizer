@@ -1,8 +1,6 @@
 <?php
 
 /**
- * The admin-specific functionality of the plugin.
- *
  * @link       https://www.rupok.me
  * @since      1.0.0
  *
@@ -11,11 +9,6 @@
  */
 
 /**
- * The admin-specific functionality of the plugin.
- *
- * Defines the plugin name, version, and two examples hooks for how to
- * enqueue the admin-specific stylesheet and JavaScript.
- *
  * @package    Custom_Script_For_Customizer
  * @subpackage Custom_Script_For_Customizer/admin
  * @author     Nazmul H. Rupok <re.enter.rupok@gmail.com>
@@ -61,18 +54,6 @@ class Custom_Script_For_Customizer_Admin {
 	 */
 	public function enqueue_styles() {
 
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Custom_Script_For_Customizer_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Custom_Script_For_Customizer_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
-
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/custom-script-for-customizer-admin.css', array(), $this->version, 'all' );
 
 	}
@@ -84,20 +65,87 @@ class Custom_Script_For_Customizer_Admin {
 	 */
 	public function enqueue_scripts() {
 
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Custom_Script_For_Customizer_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Custom_Script_For_Customizer_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
-
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/custom-script-for-customizer-admin.js', array( 'jquery' ), $this->version, false );
 
 	}
 
 }
+
+function csfc_customize_register( $wp_customize ) {
+
+
+	// Load custom controls
+	// require_once( get_template_directory() . '/admin/partials/controls.php' );
+	// require_once( get_template_directory() . '/admin/partials/sanitize.php' );
+
+
+  // Header Script section
+
+	$wp_customize->add_section( 'csfc_header_script_section' , array(
+	'title'      => __('Header Script','custom-script-for-customizer'), 
+	'priority'   => 10    
+	) );  
+
+
+	$wp_customize->add_setting( 'csfc_header_script' , array(
+	    'default'     => __('Custom script here', 'custom-script-for-customizer'),
+	    'sanitize_callback' => 'wp_kses_post',
+	) );
+
+	$wp_customize->add_control(
+	    new WP_Customize_Control(
+	        $wp_customize,
+	        'csfc_header_script',
+	        array(
+	            'label'          => __( 'Header Script', 'custom-script-for-customizer' ),
+	            'section'        => 'csfc_header_script_section',
+	            'settings'       => 'csfc_header_script',
+	            'type'           => 'textarea',
+	        )
+	    )
+	);
+
+  // Footer Script section
+
+	$wp_customize->add_section( 'csfc_footer_script_section' , array(
+	'title'      => __('Footer Script','custom-script-for-customizer'), 
+	'priority'   => 20    
+	) );  
+
+
+	$wp_customize->add_setting( 'csfc_footer_script' , array(
+	    'default'     => __('Custom script here', 'custom-script-for-customizer'),
+	    'sanitize_callback' => 'wp_kses_post',
+	) );
+
+	$wp_customize->add_control(
+	    new WP_Customize_Control(
+	        $wp_customize,
+	        'csfc_footer_script',
+	        array(
+	            'label'          => __( 'Footer Script', 'custom-script-for-customizer' ),
+	            'section'        => 'csfc_footer_script_section',
+	            'settings'       => 'csfc_footer_script',
+	            'type'           => 'textarea',
+	        )
+	    )
+	);
+
+
+  // Create custom panels
+  $wp_customize->add_panel( 'csfc_custom_scripts', array(
+      'priority' => 999,
+      'theme_supports' => '',
+      'title' => __( 'Custom Scripts', 'custom-script-for-customizer' ),
+      'description' => __( 'Add csutom scripts to header or footer', 'custom-script-for-customizer' ),
+  ) );
+
+
+  // Assign sections to panels
+  $wp_customize->get_section('csfc_header_script_section')->panel = 'csfc_custom_scripts';      
+  $wp_customize->get_section('csfc_footer_script_section')->panel = 'csfc_custom_scripts';
+
+
+}
+add_action( 'customize_register', 'csfc_customize_register' );
+
