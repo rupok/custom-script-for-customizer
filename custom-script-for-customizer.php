@@ -6,9 +6,9 @@
  * @package           Custom_Script_For_Customizer
  *
  * @wordpress-plugin
- * Plugin Name:       Custom Script for Customizer
- * Plugin URI:        https://codetic.net/custom-script-for-customizer
- * Description:       Add custom script through WordPress Customizer.
+ * Plugin Name:       Custom Scripts for Customizer
+ * Plugin URI:        https://wordpress.org/plugins/custom-script-for-customizer
+ * Description:       Add custom scripts through WordPress Customizer.
  * Version:           1.0.0
  * Author:            Nazmul H. Rupok
  * Author URI:        https://www.rupok.me

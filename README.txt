@@ -1,4 +1,4 @@
-=== Custom Script for Customizer ===
+=== Custom Header Footer Scripts for Customizer ===
 Contributors: re_enter_rupok, codetic
 Donate link: https://www.rupok.me
 Tags: custom script, header footer script, customizer script, custom javascript, google analytics
