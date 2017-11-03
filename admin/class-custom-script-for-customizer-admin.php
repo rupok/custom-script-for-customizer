@@ -94,7 +94,7 @@ function csfc_customize_register( $wp_customize ) {
 	            'label'          => __( 'Header Script', 'custom-script-for-customizer' ),
 	            'section'        => 'csfc_header_script_section',
 	            'settings'       => 'csfc_header_script',
-	            'description'    => 'Add your custom script without script tag',
+	            'description'    => 'Add your script without script tag',
 	            'type'           => 'textarea',
 	        )
 	    )
@@ -121,7 +121,7 @@ function csfc_customize_register( $wp_customize ) {
 	            'label'          => __( 'Footer Script', 'custom-script-for-customizer' ),
 	            'section'        => 'csfc_footer_script_section',
 	            'settings'       => 'csfc_footer_script',
-	            'description'    => 'Add your custom script without script tag',
+	            'description'    => 'Add your script without script tag',
 	            'type'           => 'textarea',
 	        )
 	    )
