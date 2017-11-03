@@ -1,4 +1,6 @@
-/**
- * All of the CSS for your admin-specific functionality should be
- * included in this file.
- */
+#customize-control-csfc_header_script textarea, #customize-control-csfc_footer_script textarea {
+	background-color: #002A35;
+	color: #93a1a1;
+	padding: 10px;
+	min-height: 300px;
+}
