@@ -58,17 +58,6 @@ class Custom_Script_For_Customizer_Admin {
 
 	}
 
-	/**
-	 * Register the JavaScript for the admin area.
-	 *
-	 * @since    1.0.0
-	 */
-	public function enqueue_scripts() {
-
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/custom-script-for-customizer-admin.js', array( 'jquery' ), $this->version, false );
-
-	}
-
 }
 
 function csfc_customize_register( $wp_customize ) {
