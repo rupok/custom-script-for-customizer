@@ -73,12 +73,6 @@ class Custom_Script_For_Customizer_Admin {
 
 function csfc_customize_register( $wp_customize ) {
 
-
-	// Load custom controls
-	// require_once( get_template_directory() . '/admin/partials/controls.php' );
-	// require_once( get_template_directory() . '/admin/partials/sanitize.php' );
-
-
   // Header Script section
 
 	$wp_customize->add_section( 'csfc_header_script_section' , array(
@@ -100,6 +94,7 @@ function csfc_customize_register( $wp_customize ) {
 	            'label'          => __( 'Header Script', 'custom-script-for-customizer' ),
 	            'section'        => 'csfc_header_script_section',
 	            'settings'       => 'csfc_header_script',
+	            'description'    => 'Add your custom script without script tag',
 	            'type'           => 'textarea',
 	        )
 	    )
@@ -126,6 +121,7 @@ function csfc_customize_register( $wp_customize ) {
 	            'label'          => __( 'Footer Script', 'custom-script-for-customizer' ),
 	            'section'        => 'csfc_footer_script_section',
 	            'settings'       => 'csfc_footer_script',
+	            'description'    => 'Add your custom script without script tag',
 	            'type'           => 'textarea',
 	        )
 	    )
@@ -149,3 +145,4 @@ function csfc_customize_register( $wp_customize ) {
 }
 add_action( 'customize_register', 'csfc_customize_register' );
 
+require_once plugin_dir_path( dirname( __FILE__ ) ) . '/admin/partials/custom-script-for-customizer-admin-display.php';

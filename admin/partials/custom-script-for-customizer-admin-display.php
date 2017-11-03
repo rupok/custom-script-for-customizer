@@ -11,6 +11,35 @@
  * @package    Custom_Script_For_Customizer
  * @subpackage Custom_Script_For_Customizer/admin/partials
  */
-?>
 
-<!-- This file should primarily consist of HTML with a little bit of PHP. -->
+
+// write header script
+
+function csfc_add_custom_js_in_wp_head() {
+
+	if ( ! empty( get_theme_mod('csfc_header_script'))) { ?>
+	<script type="text/javascript">
+		/* <![CDATA[ */
+			<?php echo get_theme_mod('csfc_header_script'); ?>
+		/* ]]> */
+	</script>
+	<?php }
+
+}
+add_action( 'wp_head', 'csfc_add_custom_js_in_wp_head' );
+
+
+// write footer script
+
+function csfc_add_custom_js_in_wp_footer() {
+
+	if (! empty( get_theme_mod('csfc_footer_script'))) { ?>
+	<script type="text/javascript">
+		/* <![CDATA[ */
+			<?php echo get_theme_mod('csfc_footer_script'); ?>
+		/* ]]> */
+	</script>
+	<?php }
+
+}
+add_action( 'wp_footer', 'csfc_add_custom_js_in_wp_footer' );
