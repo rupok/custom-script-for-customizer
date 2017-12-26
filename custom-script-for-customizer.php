@@ -2,13 +2,13 @@
 
 /**
  * @link              https://www.rupok.me
- * @since             1.0.0
+ * @since             1.1.0
  * @package           Custom_Script_For_Customizer
  *
  * @wordpress-plugin
  * Plugin Name:       Custom Scripts for Customizer
  * Plugin URI:        https://wordpress.org/plugins/custom-script-for-customizer
- * Description:       Add custom scripts through WordPress Customizer.
+ * Description:       Add custom scripts through WordPress Customizer and with CodeMirror editor.
  * Version:           1.0.0
  * Author:            Nazmul H. Rupok
  * Author URI:        https://www.rupok.me
@@ -23,7 +23,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'CUSTOM_SCRIPT_CUSTOMIZER_VERSION', '1.0.0' );
+define( 'CUSTOM_SCRIPT_CUSTOMIZER_VERSION', '1.1.0' );
 
 /**
  * The code that runs during plugin activation.
