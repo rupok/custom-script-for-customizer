@@ -73,11 +73,10 @@ function csfc_customize_register( $wp_customize ) {
 	$wp_customize->add_setting( 'csfc_header_script' );
 
     $control = new WP_Customize_Code_Editor_Control( $wp_customize, 'csfc_header_script', array(
-            'label'          => __( 'Header Script', 'custom-script-for-customizer' ),
+            'label'          => __( 'Add your header script without script tag', 'custom-script-for-customizer' ),
             'section' => 'csfc_header_script_section',
             'code_type' => 'text/javascript',
             'settings'       => 'csfc_header_script',
-            'description'    => 'Add your script without script tag',
     ) );
     $wp_customize->add_control( $control );
 
@@ -90,11 +89,10 @@ function csfc_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting( 'csfc_footer_script' );
     $control = new WP_Customize_Code_Editor_Control( $wp_customize, 'csfc_footer_script', array(
-            'label'          => __( 'Footer Script', 'custom-script-for-customizer' ),
+            'label'          => __( 'Add your footer script without script tag', 'custom-script-for-customizer' ),
             'section' => 'csfc_footer_script_section',
             'code_type' => 'text/javascript',
             'settings'       => 'csfc_footer_script',
-            'description'    => 'Add your script without script tag',
     ) );
     $wp_customize->add_control( $control );
 

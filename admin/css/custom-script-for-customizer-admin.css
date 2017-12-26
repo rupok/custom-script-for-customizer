@@ -1,27 +1,7 @@
-#customize-control-csfc_header_script textarea, #customize-control-csfc_footer_script textarea {
-	background-color: #002A35;
-	color: #93a1a1;
-	display: block;
-	font-family: Consolas,Monaco,monospace;
-	border-right: 0;
-	border-left: 0;
-	padding: 10px;
-	font-size: 13px;
+#customize-control-csfc_header_script .CodeMirror-wrap, #customize-control-csfc_footer_script .CodeMirror-wrap {
 	width: 100%;
-	height: -webkit-calc(100vh - 240px);
-	height: calc(100vh - 240px);
-	resize: none;
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
-}
-
-#customize-control-csfc_header_script, #customize-control-csfc_footer_script {
-	margin-left: -12px;
-	width: 299px;
-	width: -webkit-calc(100% + 24px);
-	width: calc(100% + 24px);
-	margin-bottom: -12px;
+	height: -webkit-calc(100vh - 200px);
+	height: calc(100vh - 200px);
 }
 
 #customize-control-csfc_header_script span.customize-control-title, 
@@ -29,4 +9,9 @@
 #customize-control-csfc_footer_script span.customize-control-title, 
 #customize-control-csfc_footer_script span.customize-control-description {
 	padding: 0 8px;
+}
+
+#customize-control-csfc_header_script .customize-control-title, #customize-control-csfc_footer_script .customize-control-title {
+	font-size: 12px;
+	font-weight: lighter;
 }
