@@ -8,7 +8,7 @@
  * @wordpress-plugin
  * Plugin Name:       Custom Scripts for Customizer
  * Plugin URI:        https://wordpress.org/plugins/custom-script-for-customizer
- * Description:       Add custom scripts through WordPress Customizer and with CodeMirror editor.
+ * Description:       Add custom scripts through WordPress Customizer and edit with CodeMirror editor.
  * Version:           1.1.0
  * Author:            Nazmul H. Rupok
  * Author URI:        https://www.rupok.me
