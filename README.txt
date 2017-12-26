@@ -24,7 +24,7 @@ Add custom script to header and footer through WordPress Customizer. Edit your s
 *  Ability to add any embed code.
 
 
-**Check my free WordPress Theme [Flexia](https://wordpress.org/themes/flexia/), one theme to rule them all.:**
+**Check my free WordPress Theme [Flexia](https://wordpress.org/themes/flexia/), one theme to rule them all.**
 
 **Check my other plugins:**
 
