@@ -2,18 +2,18 @@
 
 /**
  * @link              https://www.rupok.me
- * @since             1.1.0
+ * @since             1.1.1
  * @package           Custom_Script_For_Customizer
  *
  * @wordpress-plugin
  * Plugin Name:       Custom Scripts for Customizer
  * Plugin URI:        https://wordpress.org/plugins/custom-script-for-customizer
  * Description:       Add custom scripts through WordPress Customizer and edit with CodeMirror editor.
- * Version:           1.1.0
+ * Version:           1.1.1
  * Author:            Nazmul H. Rupok
  * Author URI:        https://www.rupok.me
- * License:           GPL-2.0+
- * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+ * License:           GPL-3.0+
+ * License URI:       http://www.gnu.org/licenses/gpl-3.0.txt
  * Text Domain:       custom-script-for-customizer
  * Domain Path:       /languages
  */

@@ -1,12 +1,12 @@
 === Custom Header Footer Scripts for Customizer ===
 Contributors: re_enter_rupok, codetic
 Donate link: https://www.rupok.me
-Tags: codemirror, custom script, header footer script, customizer script, custom javascript, google analytics, custom embed code
+Tags: codemirror, custom script, header footer script, customizer script, custom javascript, jquery, google analytics, custom embed code
 Requires at least: 4.0
-Tested up to: 4.9.1
-Stable tag: 1.1.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tested up to: 6.3
+Stable tag: 1.1.1
+License: GPLv3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Add custom script to header and footer through WordPress Customizer. Edit your scripts with CodeMirror editor within Customizer.
 
@@ -29,10 +29,14 @@ Add custom script to header and footer through WordPress Customizer. Edit your s
 **Check my other plugins:**
 
 
-* **[Essential Addons For Elementor](https://wordpress.org/plugins/essential-addons-for-elementor-lite/)** 
-* **[Essential Addons For Cornerstone](https://wordpress.org/plugins/essential-addons-for-cornerstone-lite/)** 
-* **[WPFomo – Fomo Notification for WordPress](https://wordpress.org/plugins/wpfomo/)** 
-* **[Twitter Cards Meta](https://wordpress.org/plugins/twitter-cards-meta/)** 
+**[Essential Addons For Elementor](https://wordpress.org/plugins/essential-addons-for-elementor-lite/)** – Most popular Elementor extensions with 1 Million+ active users in the WordPress repository.
+**[BetterDocs](https://wordpress.org/plugins/betterdocs/)** – Best documentation & knowledge base plugin for WordPress to help you reduce support tickets
+**[BetterLinks](https://wordpress.org/plugins/betterlinks/)** - Latest best WordPress link management plugin for link shortening, tracking & analyzing.
+**[NotificationX](https://wordpress.org/plugins/notificationx/)** – Best Social Proof & FOMO Marketing Solution
+**[SchedulePress](https://wordpress.org/plugins/wp-scheduled-posts/)** – Complete solution for WordPress Post Scheduling to manage schedules through an editorial calendar.
+**[EmbedPress](https://wordpress.org/plugins/embedpress/)**- Embed videos, images, posts, audio, maps and upload PDF, DOC, PPT & all other types of content into your WordPress site with one-click and showcase it beautifully for the visitors.
+**[Templately](https://wordpress.org/plugins/templately/)** Ultimate Template clouds with 1800+ ready templates for Elementor & Gutenberg along with FREE cloud collaboration with your team.
+
 
 == Installation ==
 
@@ -68,6 +72,10 @@ Sure you can!
 
 
 == Changelog ==
+
+= 1.1.1 =
+
+* Updated compatibility for WordPress 6 and PHP 8
 
 = 1.1.0 =
 
